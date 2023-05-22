@@ -1,0 +1,80 @@
+@startuml
+class Main {
++ {static} void main(String[])
+}
+class Tournament.Player {
+- String name
+- String position
+- int shirtNumber
+- int goals
+- int assistens
++ String getName()
++ void setName(String)
++ String getPosition()
++ void setPosition(String)
++ int getShirtNumber()
++ void setShirtNumber(int)
++ int getGoals()
++ void setGoals(int)
++ int getAssistens()
++ void setAssistens(int)
+}
+class Tournament.Match {
+- String place
+- Date matchDate
+- ArrayList<Team> team1
+- ArrayList<Team> team2
+- int scoreTeam1
+- int scoreTeam2
++ String getPlace()
++ void setPlace(String)
++ Date getMatchDate()
++ void setMatchDate(Date)
++ ArrayList<Team> getTeam1()
++ void setTeam1(ArrayList<Team>)
++ ArrayList<Team> getTeam2()
++ void setTeam2(ArrayList<Team>)
++ int getScoreTeam1()
++ void setScoreTeam1(int)
++ int getScoreTeam2()
++ void setScoreTeam2(int)
+}
+class Tournament.Team {
+- String name
+- int winMatches
+- int lostMatches
+- int tiedMatches
+- ArrayList<Player> players
+- int points
++ String getName()
++ void setName(String)
++ int getWinMatches()
++ void setWinMatches(int)
++ int getLostMatches()
++ void setLostMatches(int)
++ int getTiedMatches()
++ void setTiedMatches(int)
++ ArrayList<Player> getPlayers()
++ void setPlayers(ArrayList<Player>)
++ int getPoints()
++ void setPoints(int)
++ void addPlayer(Player)
+}
+class Tournament.Season {
+- String name
+- Date startDate
+- Date endDate
+- ArrayList<Match> matches
+- ArrayList<Team> teams
++ String getName()
++ void setName(String)
++ Date getStartDate()
++ void setStartDate(Date)
++ Date getEndDate()
++ void setEndDate(Date)
++ ArrayList<Match> getMatches()
++ void setMatches(ArrayList<Match>)
++ ArrayList<Team> getTeams()
++ void setTeams(ArrayList<Team>)
+}
+@enduml

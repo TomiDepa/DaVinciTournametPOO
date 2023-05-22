@@ -57,4 +57,5 @@ public class Team {
     public void setPoints(int points) {
         this.points = points;
     }
+
 }
