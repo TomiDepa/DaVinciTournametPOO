@@ -58,7 +58,6 @@ class Tournament.Team {
 + void setPlayers(ArrayList<Player>)
 + int getPoints()
 + void setPoints(int)
-+ void addPlayer(Player)
 }
 class Tournament.Season {
 - String name
@@ -77,4 +76,9 @@ class Tournament.Season {
 + ArrayList<Team> getTeams()
 + void setTeams(ArrayList<Team>)
 }
+
+Tournament.Season *-- Tournament.Team
+Tournament.Season *-- Tournament.Match
+Tournament.Team o-- Tournament.Player
+
 @enduml
