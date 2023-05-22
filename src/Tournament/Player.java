@@ -46,4 +46,17 @@ public class Player {
     public void setAssistens(int assistens) {
         this.assistens = assistens;
     }
+
+    public Player(){
+        setName("");
+        setPosition("");
+    }
+    public Player(String name){
+        setName(name);
+        setPosition("");
+    }
+    public Player(String name, String position){
+        setName(name);
+        setPosition(position);
+    }
 }

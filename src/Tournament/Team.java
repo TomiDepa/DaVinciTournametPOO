@@ -58,4 +58,20 @@ public class Team {
         this.points = points;
     }
 
+    public Team(){
+        setPlayers(new ArrayList<>());
+        setName("");
+    }
+    public Team(String name){
+        setPlayers(new ArrayList<>());
+        setName(name);
+    }
+    public Team(ArrayList<Player> players){
+        setPlayers(players);
+        setName("");
+    }
+    public Team(String name,ArrayList<Player> players){
+        setPlayers(players);
+        setName(name);
+    }
 }
