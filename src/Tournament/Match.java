@@ -58,4 +58,29 @@ public class Match {
     public void setScoreTeam2(int scoreTeam2) {
         this.scoreTeam2 = scoreTeam2;
     }
+    public Match(){
+        setPlace("");
+        setTeam1(new ArrayList<>());
+        setTeam2(new ArrayList<>());
+    }
+    public Match(String place){
+        setPlace(place);
+        setTeam1(new ArrayList<>());
+        setTeam2(new ArrayList<>());
+    }
+    public Match(ArrayList<Team> team1){
+        setPlace("");
+        setTeam1(team2);
+        setTeam2(new ArrayList<>());
+    }
+    public Match(ArrayList<Team> team2){
+        setPlace("");
+        setTeam1(new ArrayList<>());
+        setTeam2(team2);
+    }
+    public Match(String place,ArrayList<Team>team1,ArrayList<Team>team2){
+        setPlace(place);
+        setTeam1(team1);
+        setTeam2(team2);
+    }
 }

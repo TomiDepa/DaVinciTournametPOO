@@ -49,4 +49,30 @@ public class Season {
     public void setTeams(ArrayList<Team> teams) {
         this.teams = teams;
     }
+
+    public Season(){
+        setName("");
+        setMatches(new ArrayList<>());
+        setTeams(new ArrayList<>());
+    }
+    public Season(String name){
+        setName(name);
+        setMatches(new ArrayList<>());
+        setTeams(new ArrayList<>());
+    }
+    public Season(ArrayList<Match> matches){
+        setName("");
+        setMatches(matches);
+        setTeams(new ArrayList<>());
+    }
+    public Season(ArrayList<Team> teams){
+        setName("");
+        setMatches(new ArrayList<>());
+        setTeams(teams);
+    }
+    public Season(String name,ArrayList<Match> matches, ArrayList<Team> teams){
+        setName(name);
+        setMatches(matches);
+        setTeams(teams);
+    }
 }
