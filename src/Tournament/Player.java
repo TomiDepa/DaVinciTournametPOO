@@ -6,6 +6,7 @@ public class Player {
     private int shirtNumber;
     private int goals;
     private int assistens;
+    private Team team;
 
     public String getName() {
         return name;
@@ -46,6 +47,13 @@ public class Player {
     public void setAssistens(int assistens) {
         this.assistens = assistens;
     }
+    public Team getTeam() {
+        return team;
+    }
+
+    public void setTeam(Team team) {
+        this.team = team;
+    }
 
     public Player(){
         setName("");
@@ -59,4 +67,6 @@ public class Player {
         setName(name);
         setPosition(position);
     }
+
+
 }

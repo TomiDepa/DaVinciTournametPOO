@@ -57,6 +57,10 @@ public class Team {
     public void setPoints(int points) {
         this.points = points;
     }
+    public void addPlayer(Player player){
+        getPlayers().add(player);
+        player.setTeam(this);
+    }
 
     public Team(){
         setPlayers(new ArrayList<>());
