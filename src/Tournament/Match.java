@@ -70,7 +70,7 @@ public class Match {
     }
     public Match(ArrayList<Team> team1){
         setPlace("");
-        setTeam1(team2);
+        setTeam1(team1);
         setTeam2(new ArrayList<>());
     }
     public Match(ArrayList<Team> team2){
