@@ -67,7 +67,6 @@ public class Team {
         getPlayers().add(player);
         player.setTeam(this);
     }
-
     public Team(){
         setPlayers(new ArrayList<>());
         setName("");

@@ -8,6 +8,7 @@ class Tournament.Player {
 - int shirtNumber
 - int goals
 - int assistens
+- Team team
 + String getName()
 + void setName(String)
 + String getPosition()
@@ -18,6 +19,9 @@ class Tournament.Player {
 + void setGoals(int)
 + int getAssistens()
 + void setAssistens(int)
++ String showTeam()
++ Team getTeam()
++ void setTeam(Team)
 }
 class Tournament.Match {
 - String place
@@ -58,6 +62,8 @@ class Tournament.Team {
 + void setPlayers(ArrayList<Player>)
 + int getPoints()
 + void setPoints(int)
++ void showMembers()
++ void addPlayer(Player)
 }
 class Tournament.Season {
 - String name
@@ -76,9 +82,4 @@ class Tournament.Season {
 + ArrayList<Team> getTeams()
 + void setTeams(ArrayList<Team>)
 }
-
-Tournament.Season *-- Tournament.Team
-Tournament.Season *-- Tournament.Match
-Tournament.Team o-- Tournament.Player
-
 @enduml
