@@ -47,6 +47,9 @@ public class Player {
     public void setAssistens(int assistens) {
         this.assistens = assistens;
     }
+    public String showTeam() {
+        return this.getName() + " pertenece a " + this.getTeam().getName();
+    }
     public Team getTeam() {
         return team;
     }
